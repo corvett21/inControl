@@ -1,0 +1,24 @@
+#N canvas -8 -8 1366 725 10;
+#X obj 293 176 midikeyboard;
+#X obj 294 254 pack i i;
+#X obj 310 388 ezdac~;
+#X obj 122 350 notevis_poly;
+#X obj 304 348 inc_fmsynth~ 50 0 0.25 30 30 1 200 100 100 0.25 200
+;
+#X obj 558 184 s \$0_foo;
+#X obj 513 79 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 4800 1;
+#X obj 570 267 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X floatatom 513 215 5 0 0 0 - - -;
+#X floatatom 585 243 5 0 0 0 - - -;
+#X obj 585 222 foobar \$0_pos;
+#X connect 0 0 1 0;
+#X connect 0 1 1 1;
+#X connect 1 0 3 0;
+#X connect 1 0 4 0;
+#X connect 4 0 2 0;
+#X connect 6 0 5 0;
+#X connect 6 0 8 0;
+#X connect 10 0 7 0;
+#X connect 10 0 9 0;

@@ -1,0 +1,5 @@
+#N canvas -8 -8 1366 725 10;
+#X obj 306 100 incOrchestra;
+#X obj 585 636 record_stereo~;
+#X connect 0 0 1 0;
+#X connect 0 1 1 1;
