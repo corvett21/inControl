@@ -77,7 +77,7 @@
 #X obj 954 231 s~ \$0_eenv;
 #X obj 727 395 r~ \$0_eenv;
 #X obj 742 415 r~ \$0_amodosc;
-#X obj 250 248 loadbang;
+#X obj 255 219 loadbang;
 #X obj 480 629 s~ \$0_amodosc;
 #X obj 166 253 == 0;
 #X obj 517 496 expr 4*($f1/127)+1;
@@ -199,7 +199,7 @@
 #X connect 68 0 57 0;
 #X connect 70 0 65 0;
 #X connect 71 0 62 0;
-#X connect 72 0 13 0;
+#X connect 72 0 14 0;
 #X connect 74 0 28 1;
 #X connect 75 0 124 0;
 #X connect 76 0 67 0;
